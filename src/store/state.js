@@ -8,7 +8,7 @@ const userDefaults = {
     about:
         'Dessert chocolate cake lemon drops jujubes. Biscuit cupcake ice cream bear claw brownie brownie marshmallow.',
     // eslint-disable-next-line global-require
-    photoURL: require('@/assets/images/portrait/small/avatar-s-11.jpg'), // From Auth
+    photoURL: require('@/assets/images/portrait/small/avatar-s-1.jpg'), // From Auth
     status: 'online',
     userRole: 'admin',
 };

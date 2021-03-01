@@ -21,7 +21,7 @@ const mutations = {
 
     UPDATE_STARRED_PAGE(state, payload) {
         // find item index in search list state
-        const index = state.navbarSearchAndPinList.pages.data.findIndex(item => item.url == payload.url);
+        const index = state.navbarSearchAndPinList.pages.data.findIndex(item => item.url === payload.url);
 
         // update the main list
         state.navbarSearchAndPinList.pages.data[index].is_bookmarked = payload.val;
