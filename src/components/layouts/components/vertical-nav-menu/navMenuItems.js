@@ -1,13 +1,13 @@
 export default [
     {
         url: '/',
-        name: 'Home',
+        name: '首页',
         slug: 'home',
         icon: 'HomeIcon',
     },
     {
         url: '/page2',
-        name: 'Page 2',
+        name: '报名',
         slug: 'page2',
         icon: 'FileIcon',
     },

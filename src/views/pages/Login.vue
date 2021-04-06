@@ -25,7 +25,7 @@
                                 </div>
                                 <div>
                                     <vs-input
-                                        name="email"
+                                        name="user"
                                         icon-no-border
                                         icon="icon icon-user"
                                         icon-pack="feather"
@@ -49,7 +49,7 @@
                                         <vs-checkbox v-model="checkbox_remember_me" class="mb-3">记住我</vs-checkbox>
                                         <router-link to="">忘记密码?</router-link>
                                     </div>
-                                    <vs-button type="border" @click="login">Register</vs-button>
+                                    <vs-button type="border" @click="register">注册</vs-button>
                                     <vs-button class="float-right" @click="login">登录</vs-button>
 
                                     <vs-divider>OR</vs-divider>
