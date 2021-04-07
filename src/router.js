@@ -20,9 +20,14 @@ const router = new Router({
                     component: () => import('./views/Home.vue'),
                 },
                 {
-                    path: '/page2',
-                    name: 'page-2',
-                    component: () => import('./views/Page2.vue'),
+                    path: '/sign',
+                    name: 'sign',
+                    component: () => import('./views/Sign.vue'),
+                },
+                {
+                    path: '/confirm',
+                    name: 'confirm',
+                    component: () => import('./views/Confirm.vue'),
                 },
             ],
         },

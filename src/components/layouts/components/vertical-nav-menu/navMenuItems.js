@@ -3,12 +3,23 @@ export default [
         url: '/',
         name: '首页',
         slug: 'home',
-        icon: 'HomeIcon',
+        icon: 'A',
     },
     {
-        url: '/page2',
-        name: '报名',
-        slug: 'page2',
-        icon: 'FileIcon',
+        url: null,
+        name: '报名申请',
+        icon: 'edit',
+        submenu: [
+            {
+                url: '/sign',
+                name: '重修报名',
+                slug: 'home-news',
+            },
+            {
+                url: '/confirm',
+                name: '补考确认',
+                slug: 'dashboard-ecommerce',
+            },
+        ],
     },
 ];
