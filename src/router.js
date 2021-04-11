@@ -10,19 +10,45 @@ const router = new Router({
         return { x: 0, y: 0 };
     },
     routes: [
+        { path: '/', redirect: '/home' },
         {
             path: '',
             component: () => import('./components/layouts/main/Main.vue'),
             children: [
                 {
-                    path: '/',
+                    path: '/home',
                     name: 'home',
                     component: () => import('./views/Home.vue'),
                 },
                 {
-                    path: '/page2',
-                    name: 'page-2',
-                    component: () => import('./views/Page2.vue'),
+                    path: '/sign',
+                    name: 'sign',
+                    component: () => import('./views/Sign.vue'),
+                },
+                {
+                    path: '/confirm',
+                    name: 'confirm',
+                    component: () => import('./views/Confirm.vue'),
+                },
+                {
+                    path: '/select',
+                    name: 'select',
+                    component: () => import('./views/Select.vue'),
+                },
+                {
+                    path: '/query',
+                    name: 'query',
+                    component: () => import('./views/Query.vue'),
+                },
+                {
+                    path: '/evaluate',
+                    name: 'evaluate',
+                    component: () => import('./views/Evaluate.vue'),
+                },
+                {
+                    path: '/graduation',
+                    name: 'graduation',
+                    component: () => import('./views/Graduation.vue'),
                 },
             ],
         },

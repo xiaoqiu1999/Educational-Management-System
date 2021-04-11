@@ -1,0 +1,65 @@
+{
+  "id": "2417047",
+  "name": "毕业",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "17459427",
+      "name": "搜索--1",
+      "font_class": "sousuo",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "1962889",
+      "name": "icon_公司信息维护",
+      "font_class": "icon_gongsixinxiweihu",
+      "unicode": "e864",
+      "unicode_decimal": 59492
+    },
+    {
+      "icon_id": "2740266",
+      "name": "毕业实习",
+      "font_class": "graduation",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "8713093",
+      "name": "信息查询",
+      "font_class": "query",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "11741904",
+      "name": "学生选课",
+      "font_class": "select",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "13478796",
+      "name": "首页",
+      "font_class": "home",
+      "unicode": "e6f7",
+      "unicode_decimal": 59127
+    },
+    {
+      "icon_id": "14113876",
+      "name": "评价",
+      "font_class": "evaluate",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "16667823",
+      "name": "报名",
+      "font_class": "sign",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    }
+  ]
+}
