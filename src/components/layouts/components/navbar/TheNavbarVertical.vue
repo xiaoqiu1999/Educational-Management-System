@@ -8,7 +8,13 @@
                     icon="MenuIcon"
                     @click.stop="showSidebar"
                 />
-
+                <div v-for="(item, index) in iconFontList" :key="index">
+                    <a :href="item">
+                        <svg class="icon" aria-hidden="true">
+                            <use :xlink:href="`#icon-${item}`"></use>
+                        </svg>
+                    </a>
+                </div>
                 <vs-spacer />
 
                 <search-bar class="mr-4" />
@@ -30,6 +36,11 @@ export default {
             type: String,
             default: '#fff',
         },
+    },
+    data() {
+        return {
+            iconFontList: ['home', 'sign', 'select', 'query', 'evaluate', 'graduation'],
+        };
     },
     components: {
         SearchBar,

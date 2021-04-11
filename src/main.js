@@ -27,6 +27,8 @@ import router from './router';
 
 // Vuex Store
 import store from './store/store';
+// 阿里iconfont
+import './assets/fonts/iconfont';
 
 Vue.use(Vuesax);
 Vue.use(VueHammer);
