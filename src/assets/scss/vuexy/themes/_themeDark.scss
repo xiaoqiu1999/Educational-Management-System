@@ -1552,4 +1552,14 @@
     }
   }
 }
-/*! rtl:end:ignore */
+// element ui
+.theme-dark{
+  .el-card{
+    color: $theme-dark-text-color;
+    border: $theme-dark-border-color 1px solid;
+    background-color: $theme-light-dark-bg;
+    .el-card__header{
+       border-bottom: $theme-dark-border-color 1px solid;
+    }
+  }
+}
