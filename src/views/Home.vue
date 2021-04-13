@@ -7,8 +7,31 @@
                 </el-carousel-item>
             </el-carousel>
         </div>
+        <div class="w-full mt-8 xl:flex justify-between">
+            <el-card class="xl:w-1/4 sm:w-full mt-4" v-for="(item, index) in cardDataList" :key="index">
+                <div slot="header" class="clearfix">
+                    <span>{{ item.name }}</span>
+                </div>
+                <div v-for="(contentItem, contentIndex) in item.listContent" :key="contentIndex" class="text item">
+                    {{ contentItem }}
+                </div>
+            </el-card>
+        </div>
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            cardDataList: [
+                { name: '成绩', listContent: ['a'] },
+                { name: '成绩', listContent: ['a'] },
+                { name: '成绩', listContent: ['a'] },
+            ],
+        };
+    },
+};
+</script>
 <style>
 .el-carousel__item h3 {
     color: #475669;
@@ -24,5 +47,21 @@
 
 .el-carousel__item:nth-child(2n + 1) {
     background-color: #d3dce6;
+}
+.text {
+    font-size: 14px;
+}
+
+.item {
+    margin-bottom: 18px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: '';
+}
+.clearfix:after {
+    clear: both;
 }
 </style>
