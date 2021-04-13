@@ -28,9 +28,9 @@ export default [
         icon: 'BookIcon',
         submenu: [
             {
-                url: '/sign',
-                name: '重修报名',
-                slug: 'home-news',
+                url: '/select',
+                name: '选修课',
+                slug: 'select',
             },
             {
                 url: '/confirm',
@@ -46,14 +46,26 @@ export default [
         submenu: [
             {
                 url: '/sign',
-                name: '重修报名',
+                name: '个人信息查询',
                 slug: 'home-news',
             },
             {
                 url: '/confirm',
-                name: '补考确认',
+                name: '成绩查询',
                 slug: 'dashboard-ecommerce',
             },
         ],
+    },
+    {
+        url: '/evaluate',
+        name: '学生评价',
+        icon: 'BookIcon',
+        slug: 'evaluate',
+    },
+    {
+        url: '/graduation',
+        name: '毕业设计',
+        icon: 'BookIcon',
+        slug: 'graduation',
     },
 ];

@@ -29,7 +29,6 @@
                                         icon-no-border
                                         icon="icon icon-user"
                                         icon-pack="feather"
-                                        label-placeholder="学号"
                                         v-model="email"
                                         class="w-full"
                                     />
@@ -40,7 +39,6 @@
                                         icon-no-border
                                         icon="icon icon-lock"
                                         icon-pack="feather"
-                                        label-placeholder="密码"
                                         v-model="password"
                                         class="w-full mt-6"
                                     />
@@ -69,7 +67,7 @@ export default {
         return {
             email: '',
             password: '',
-            checkbox_remember_me: false,
+            checkbox_remember_me: true,
         };
     },
     methods: {

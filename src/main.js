@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import Vuesax from 'vuesax';
 import { VueHammer } from 'vue2-hammer';
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 import App from './App';
 
 // Vuesax Component Framework
@@ -27,10 +29,12 @@ import router from './router';
 
 // Vuex Store
 import store from './store/store';
+
 // 阿里iconfont
 import './assets/fonts/iconfont';
 
 Vue.use(Vuesax);
+Vue.use(ElementUI);
 Vue.use(VueHammer);
 
 // Feather font icon
