@@ -178,3 +178,8 @@ div[id$="demo"] {
 .no-scroll-content {
   height: calc(var(--vh, 1vh) * 100 - 14.1rem);
 }
+// switch 主题颜色的位置
+.toolBar {
+  top: 2.6429rem;
+  right: 14rem;
+}

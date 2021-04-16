@@ -6,11 +6,8 @@
         >
             <img src="@/assets/images/pages/404.png" alt="graphic-404" class="mx-auto mb-4 max-w-full" />
             <h1 class="sm:mx-0 mx-4 mb-12 text-5xl d-theme-heading-color">404 - Page Not Found!</h1>
-            <p class="sm:mx-0 mx-4 mb-4 sm:mb-16 d-theme-text-inverse">
-                paraphonic unassessable foramination Caulopteris worral Spirophyton encrimson esparcet aggerate
-                chondrule restate whistler shallopy biosystematy area bertram plotting unstarting quarterstaff.
-            </p>
-            <vs-button size="large" to="/">Back to Home</vs-button>
+            <p class="sm:mx-0 mx-4 mb-4 sm:mb-16 d-theme-text-inverse">您访问的页面不存在哦~~~</p>
+            <vs-button size="large" to="/">回到主页</vs-button>
         </div>
     </div>
 </template>

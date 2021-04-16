@@ -128,6 +128,10 @@
                                     @setAppClasses="classesStr => $emit('setAppClasses', classesStr)"
                                 />
                             </transition>
+                            <vs-switch class="fixed z-9999 toolBar base" v-model="active">
+                                <template #on> 明亮模式 </template>
+                                <template #off> 深色模式 </template>
+                            </vs-switch>
                         </div>
                     </div>
                 </div>
@@ -158,6 +162,7 @@ export default {
     },
     data() {
         return {
+            active: true,
             footerType: themeConfig.footerType || 'static',
             hideScrollToTop: themeConfig.hideScrollToTop,
             isNavbarDark: false,
@@ -169,8 +174,12 @@ export default {
         };
     },
     watch: {
-        $route () {
+        $route() {
             this.routeTitle = this.$route.meta.pageTitle;
+        },
+        active() {
+            themeConfig.theme = this.active ? 'light' : 'dark';
+            this.$store.commit('UPDATE_THEME', themeConfig.theme);
         },
         isThemeDark(val) {
             const color = this.navbarColor === '#fff' && val ? '#10163a' : '#fff';
